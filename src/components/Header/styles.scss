@@ -1,0 +1,38 @@
+.header {
+  background: var(--white);
+  height: 80px;
+  display: grid;
+  grid-template-columns: 80px 2fr 2fr;
+
+  .logo,
+  ul,
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    li {
+      margin-right: var(--px-20);
+      font-size: var(--ft-18);
+      color: var(--text-highlight);
+    }
+    @media (min-width: 768px) {
+      margin-left: var(--px-40);
+    }
+  }
+  .user {
+    justify-content: flex-end;
+    margin-right: 15px;
+    img {
+      width: 40px;
+      border-radius: 50%;
+    }
+    @media (min-width: 768px) {
+      margin-right: 20px;
+    }
+  }
+}
