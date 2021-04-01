@@ -1,0 +1,115 @@
+.content {
+  height: 100vh;
+  padding: var(--px-20) 0;
+  display: grid;
+  grid-template-rows: 60px 250px 350px;
+  gap: var(--px-10);
+  h1 {
+    font-size: var(--ft-24);
+    font-weight: 500;
+  }
+  .display-info {
+    display: grid;
+    grid-template:
+      "followers following" 1fr
+      "followers starreds" 1fr
+      /1fr 1fr;
+    gap: var(--px-10);
+
+    .followers {
+      grid-area: followers;
+    }
+    .following {
+      grid-area: following;
+    }
+    .starreds {
+      grid-area: starreds;
+    }
+
+    .followers,
+    .following,
+    .starreds {
+      display: grid;
+      grid-template-rows: 20px 1fr;
+    }
+  }
+
+  .display-user {
+    padding: var(--px-10) 0;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--px-10);
+
+    .profile-info {
+      display: grid;
+      grid-template-rows: 20px 1fr;
+      gap: var(--px-10);
+    }
+    .wrap-info {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: var(--px-10);
+      align-items: center;
+      img {
+        width: 100%;
+        max-width: 120px;
+        border-radius: 8px;
+      }
+      .info {
+        a {
+          font-size: 28px;
+          font-weight: 600;
+          transition: color 0.2s ease;
+          &:hover {
+            color: var(--blue);
+          }
+        }
+        p {
+          color: var(--text-highlight);
+        }
+        ul li {
+          font-size: var(--ft-14);
+          color: var(--text-highlight);
+          margin-top: 10px;
+          & + li {
+            margin-top: 5px;
+          }
+          small {
+            font-weight: 600;
+            color: var(--text);
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-template-rows: 60px 150px 350px;
+    .display-info {
+      grid-template:
+        "followers following starreds" 150px
+        /1fr 1fr 1fr;
+    }
+    .display-user {
+      padding: 0;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+.box {
+  background: var(--white);
+  border-radius: 8px;
+  padding: var(--px-20);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  header h4 {
+    color: var(--text-highlight);
+  }
+}
+strong {
+  font-size: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
