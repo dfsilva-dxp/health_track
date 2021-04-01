@@ -122,7 +122,8 @@
   header h4 {
     color: var(--text-highlight);
   }
-  > strong {
+  > strong,
+  strong a {
     font-size: var(--ft-64);
     display: flex;
     align-items: center;

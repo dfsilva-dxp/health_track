@@ -1,3 +1,4 @@
+import { Route, Routes, Link } from "react-router-dom";
 import "./styles.scss";
 
 export function Home() {
@@ -62,17 +63,25 @@ export function Home() {
               <header>
                 <h4>Starreds</h4>
               </header>
-              <strong>20</strong>
+              <strong>
+                <Link to="starred">20</Link>
+              </strong>
             </div>
             <div className="repos box">
               <header>
                 <h4>Repositories</h4>
               </header>
-              <strong>20</strong>
+              <strong>
+                <Link to="repos">20</Link>
+              </strong>
             </div>
           </div>
         </div>
       </div>
+      <Routes>
+        <Route path="repos" />
+        <Route path="starreds" />
+      </Routes>
     </section>
   );
 }

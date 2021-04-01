@@ -15,10 +15,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    li {
+    li a {
       margin-right: var(--px-20);
       font-size: var(--ft-18);
       color: var(--text-highlight);
+
+      &.active {
+        border-bottom: 2px solid var(--text);
+        color: var(--text);
+      }
     }
     @media (min-width: 768px) {
       margin-left: var(--px-40);

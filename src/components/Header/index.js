@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import gitLogo from "../../assets/github.png";
 import "./styles.scss";
 
@@ -8,8 +9,12 @@ export function Header() {
         <img src={gitLogo} alt="Logo" />
       </div>
       <ul>
-        <li>Repos</li>
-        <li>Starreds</li>
+        <li>
+          <NavLink to="starred">Starreds</NavLink>
+        </li>
+        <li>
+          <NavLink to="repos">Repositories</NavLink>
+        </li>
       </ul>
       <div className="user">
         <img
