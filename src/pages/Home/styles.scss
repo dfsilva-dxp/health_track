@@ -1,115 +1,130 @@
 .content {
+  width: 100%;
   height: 100vh;
-  padding: var(--px-20) 0;
   display: grid;
-  grid-template-rows: 60px 250px 350px;
-  gap: var(--px-10);
-  h1 {
-    font-size: var(--ft-24);
-    font-weight: 500;
-  }
-  .display-info {
+  grid-template-rows: 40px 1fr;
+  gap: var(--px-20);
+
+  .display {
     display: grid;
-    grid-template:
-      "followers following" 1fr
-      "followers starreds" 1fr
-      /1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: var(--px-10);
-
-    .followers {
-      grid-area: followers;
-    }
-    .following {
-      grid-area: following;
-    }
-    .starreds {
-      grid-area: starreds;
-    }
-
-    .followers,
-    .following,
-    .starreds {
+    .user-info {
       display: grid;
-      grid-template-rows: 20px 1fr;
-    }
-  }
-
-  .display-user {
-    padding: var(--px-10) 0;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: var(--px-10);
-
-    .profile-info {
-      display: grid;
-      grid-template-rows: 20px 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 170px 1fr;
       gap: var(--px-10);
-    }
-    .wrap-info {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: var(--px-10);
-      align-items: center;
-      img {
-        width: 100%;
-        max-width: 120px;
-        border-radius: 8px;
+      .avatar {
+        height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          max-width: 140px;
+        }
       }
       .info {
-        a {
-          font-size: 28px;
-          font-weight: 600;
-          transition: color 0.2s ease;
-          &:hover {
-            color: var(--blue);
+        display: grid;
+        grid-template-rows: 20px 1fr;
+        .wrap {
+          h1 a {
+            font-size: var(--ft-28);
+            transition: color 0.2s ease;
+            &:hover {
+              color: var(--blue);
+            }
           }
-        }
-        p {
-          color: var(--text-highlight);
-        }
-        ul li {
-          font-size: var(--ft-14);
-          color: var(--text-highlight);
-          margin-top: 10px;
-          & + li {
-            margin-top: 5px;
+          h4 {
+            color: var(--text-highlight);
           }
-          small {
-            font-weight: 600;
-            color: var(--text);
+          ul {
+            margin-top: var(--px-10);
+            li {
+              font-size: var(--ft-14);
+              color: var(--text-highlight);
+              font-weight: 600;
+              strong {
+                font-weight: 600;
+                color: var(--text);
+                margin-right: 5px;
+              }
+            }
+          }
+          p {
+            margin-top: var(--px-10);
+            font-size: var(--ft-16);
+            line-height: var(--ft-18);
           }
         }
       }
     }
+
+    .other-info {
+      display: grid;
+      grid-template:
+        "followers  followers   following" 50px
+        "followers  followers   following" 50px
+        "starreds   repos       repos" 50px
+        "starreds   repos       repos" 50px
+        / 1fr 1fr 1fr;
+      gap: var(--px-10);
+
+      .followers {
+        grid-area: followers;
+      }
+      .following {
+        grid-area: following;
+      }
+      .starreds {
+        grid-area: starreds;
+      }
+      .repos {
+        grid-area: repos;
+      }
+    }
   }
 
-  @media (min-width: 768px) {
-    grid-template-rows: 60px 150px 350px;
-    .display-info {
-      grid-template:
-        "followers following starreds" 150px
-        /1fr 1fr 1fr;
+  @media (min-width: 576px) {
+    .display {
+      grid-template-rows: 170px 1fr;
+      .user-info {
+        grid-template-columns: 170px 1fr;
+        grid-template-rows: 170px;
+        gap: var(--px-10);
+      }
+      .other-info {
+        grid-template:
+          "followers  following" 100px
+          "starreds  repos" 100px
+          / 1fr 1fr;
+      }
     }
-    .display-user {
-      padding: 0;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
+  }
+  @media (min-width: 768px) {
+    .display {
+      .other-info {
+        grid-template:
+          "followers  following starreds repos" 150px
+          / 1fr 1fr 1fr 1fr;
+      }
     }
   }
 }
-
 .box {
   background: var(--white);
   border-radius: 8px;
-  padding: var(--px-20);
+  padding: var(--px-10);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-rows: 20px 1fr;
   header h4 {
     color: var(--text-highlight);
   }
-}
-strong {
-  font-size: 53px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  > strong {
+    font-size: var(--ft-64);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
