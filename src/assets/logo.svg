@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="466" height="98" viewBox="0 0 466 98">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_41" data-name="Retângulo 41" width="466" height="98" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" clip-path="url(#clip-path)">
+    <path id="Caminho_42" data-name="Caminho 42" d="M299.878,54.154c-.974,4.718-4.591,8.541-10.062,8.541s-7.5-3.818-6.529-8.541,4.591-8.536,10.062-8.536S300.837,49.431,299.878,54.154Z" transform="translate(-51.529 13.477)" fill="#4cd62b"/>
+    <path id="Caminho_45" data-name="Caminho 45" d="M40.971,5.692H63.308L44.726,96.77H22.389Z" transform="translate(6.614 1.682)" fill="#fff"/>
+    <path id="Caminho_46" data-name="Caminho 46" d="M65.337,5.692H87.673L73.2,77.054H50.853Z" transform="translate(15.023 1.682)" fill="#fff"/>
+    <path id="Caminho_47" data-name="Caminho 47" d="M14.483,5.692H36.82L22.342,77.054H0Z" transform="translate(0 1.682)" fill="#fff"/>
+    <text id="git" transform="translate(117 76)" fill="#fff" font-size="90" font-family="Rajdhani-Bold, Rajdhani" font-weight="700"><tspan x="0" y="0">git</tspan></text>
+    <text id="app" transform="translate(263 79)" fill="#fff" font-size="90" font-family="Rajdhani-Bold, Rajdhani" font-weight="700"><tspan x="0" y="0">app</tspan></text>
+  </g>
+</svg>
