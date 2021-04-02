@@ -20,6 +20,7 @@
   --ft-73: 4.5625rem;
   --ft-120: 7.5rem;
 
+  --px-8: 0.5rem;
   --px-10: 0.625rem;
   --px-16: 1rem;
   --px-20: 1.25rem;
@@ -135,4 +136,10 @@ button {
   .container {
     max-width: 1140px;
   }
+}
+.btn {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  border-radius: 3px;
 }
