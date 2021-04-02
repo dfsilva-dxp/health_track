@@ -1,0 +1,38 @@
+.login-form {
+  width: 100%;
+  max-width: 450px;
+  padding: var(--px-16);
+  display: grid;
+  grid-template-rows: repeat(6, 45px);
+  gap: var(--px-10);
+  h1,
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+  p {
+    position: relative;
+    font-weight: 600;
+    color: var(--text-highlight);
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 45%;
+      height: 2px;
+      background: var(--gray-line);
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+  }
+}
