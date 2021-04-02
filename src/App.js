@@ -7,7 +7,7 @@ import "./styles/global.scss";
 function App() {
   return (
     <>
-      {true ? (
+      {false ? (
         <BrowserRouter>
           <Header />
           <MyRoutes />
