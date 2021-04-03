@@ -143,3 +143,20 @@ button {
   border: none;
   border-radius: 3px;
 }
+form {
+  width: 100%;
+  max-width: 450px;
+  padding: var(--px-16);
+  display: grid;
+  gap: var(--px-10);
+  h1,
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+}
