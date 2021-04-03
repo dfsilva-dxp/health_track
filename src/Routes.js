@@ -4,7 +4,7 @@ import { Home } from "./pages/Home";
 export function MyRoutes() {
   return (
     <Routes>
-      <Route path="/*" element={<Home />} exact />
+      <Route path="/" element={<Home />} exact />
     </Routes>
   );
 }
