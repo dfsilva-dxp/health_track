@@ -19,7 +19,7 @@ export function Sidebar() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/">
+            <NavLink to="/" end>
               <TiHomeOutline />
             </NavLink>
           </li>
@@ -29,7 +29,7 @@ export function Sidebar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="physucal_activites">
+            <NavLink to="physical_activites">
               <TiStopwatch />
             </NavLink>
           </li>
