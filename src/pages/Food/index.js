@@ -1,7 +1,7 @@
 export function Food() {
   return (
-    <div className="container">
+    <section>
       <h1>Food</h1>
-    </div>
+    </section>
   );
 }

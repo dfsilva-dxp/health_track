@@ -1,7 +1,7 @@
 export function Weight() {
   return (
-    <div className="container">
+    <section>
       <h1>Weight</h1>
-    </div>
+    </section>
   );
 }

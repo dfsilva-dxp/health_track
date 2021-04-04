@@ -1,7 +1,7 @@
 export function PhysicalActivites() {
   return (
-    <div className="container">
+    <section>
       <h1>Activities</h1>
-    </div>
+    </section>
   );
 }

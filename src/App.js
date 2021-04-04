@@ -12,7 +12,9 @@ function App() {
         <BrowserRouter>
           <Header />
           <Sidebar />
-          <MyRoutes />
+          <main className="container">
+            <MyRoutes />
+          </main>
         </BrowserRouter>
       ) : (
         <LoginPage />
