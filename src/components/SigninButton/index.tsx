@@ -15,7 +15,7 @@ export function SingInButton() {
   ) : (
     <button type="button" className={styles.singInButton}>
       <FaGithub color="#eba417" />
-      Sing in with GitHub
+      Sign in com GitHub
     </button>
   );
 }
